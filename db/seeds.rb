@@ -1,3 +1,4 @@
+#SFC 公式シラバスより引用（https://syllabus.sfc.keio.ac.jp/)
 Zemi.create(name: '蟹江　憲史先生', bango: '01029', abstract: 'xSDG', credit: '4', link: 'https://syllabus.sfc.keio.ac.jp/courses/2024_39947?locale=ja', info:' この研究会では、SDGsについていくつかのグループに分かれ、様々な角度から実践的研究を行います。研究はxSDGラボ・コンソーシアムと連携して進めていくので、同ラボやコンソーシアムの活動に参加してもらうことになります。そうしたことを含め、必ずしもシラバス記載の時間のみに活動を行うわけではありません。')
 
 Zemi.create(name: '小林　博人先生', bango: '05741', abstract: 'パーティシパトリー建築・都市・コミュニティデザイン', credit: '2', link: 'https://syllabus.sfc.keio.ac.jp/courses/2024_41486?locale=ja', info:'研究会が目指すこと：
