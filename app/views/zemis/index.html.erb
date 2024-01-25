@@ -1,0 +1,16 @@
+<h1>研究会の一覧</h1>
+
+<!--chatgptを基に作成-->
+<%= form_with(url: zemis_path, method: :get) do |form| %>
+  <%= form.text_field :keyword, placeholder: 'キーワード検索もできます。' %>
+  <%= form.submit '検索' %>
+<% end %>
+<!--ここまでchatgptを基に作成-->
+
+<% @zemis.each do |zemi| %>
+
+  <h3><%= zemi.name %></h3>
+  <p>研究会の概要 - <%= zemi.abstract %></p>
+
+  <%=link_to '研究会の詳細とコメント', zemi %>
+<% end %>

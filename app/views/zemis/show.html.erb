@@ -1,0 +1,40 @@
+<h1>詳細ページ</h1>
+
+<p>
+  <strong>研究会の担当教授名：</strong>
+  <%= @zemi&.name %>
+</p>
+
+
+<p>
+  <strong>検索用のリンク：</strong>
+   <%= link_to 'シラバス', @zemi&.link %>
+</p>
+
+
+<p>
+  <strong>研究会の概要：</strong>
+  <%= @zemi&.abstract %>
+</p>
+
+<p>
+  <strong>研究会の詳細：</strong>
+  <%= @zemi&.info %>
+</p>
+
+<h2>研究会に関するコメント</h2>
+<% @comments.each do |comment| %>
+  <p><%= comment.content %></p>
+<% end %>
+<!--
+以下chatgptを基に改変
+-->
+<%= form_with(model: [@zemis, @new_comment], url: zemi_comments_path(@zemi), local: true) do |form| %>
+  <%= form.label :publishe, "ニックネーム:" %>
+  <%= form.text_field :publishe %>
+  <%= form.label :content, "コメント:" %>
+  <%= form.text_area :content %>
+  <%= form.submit "Submit Comment" %>
+<% end %>
+
+<%= link_to '戻る', zemis_path %>
