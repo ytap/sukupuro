@@ -1,28 +1,26 @@
 <h1>詳細ページ</h1>
 
 <p>
-  <strong>研究会の担当教授名：</strong>
+  <strong>担当：</strong>
   <%= @zemi&.name %>
 </p>
 
 
 <p>
-  <strong>検索用のリンク：</strong>
-   <%= link_to 'シラバス', @zemi&.link %>
-</p>
-
-
-<p>
-  <strong>研究会の概要：</strong>
+  <strong>テーマ：</strong>
   <%= @zemi&.abstract %>
 </p>
 
 <p>
-  <strong>研究会の詳細：</strong>
+  <strong>詳細：</strong>
   <%= @zemi&.info %>
 </p>
 
-<h2>研究会に関するコメント</h2>
+<p>
+   <%= link_to 'シラバス', @zemi&.link %>
+</p>
+
+<h2>コメント</h2>
 <% @comments.each do |comment| %>
   <p><%= comment.content %></p>
 <% end %>

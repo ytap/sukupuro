@@ -1,4 +1,4 @@
-<h1>研究会の一覧</h1>
+<h1>2024春研究会一覧</h1>
 
 <!--chatgptを基に作成-->
 <%= form_with(url: zemis_path, method: :get) do |form| %>
@@ -10,7 +10,7 @@
 <% @zemis.each do |zemi| %>
 
   <h3><%= zemi.name %></h3>
-  <p>研究会の概要 - <%= zemi.abstract %></p>
+  <p>テーマ : <%= zemi.abstract %></p>
 
-  <%=link_to '研究会の詳細とコメント', zemi %>
+  <%=link_to '詳細とコメント', zemi %>
 <% end %>
